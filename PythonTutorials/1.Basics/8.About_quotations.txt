@@ -1,0 +1,21 @@
+There are three types of quoatations.
+
+' single 
+'' double
+''' tripple
+
+All these are used to assign strings to a variable.
+However if string is very short length then we can go with eiter single or double
+
+Now for long lenght i mena more than one line then we can go with tripple quotations.
+
+we can aslo use single and double but with escape charcter \n
+
+ex:
+
+x='''This is first line
+This is second line
+This is third line'''
+
+
+x="This is first line \nThis is second line\nThis is third line"

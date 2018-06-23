@@ -1,0 +1,90 @@
+This module provides a number of functions and variables that can be used to manipulate different parts of the Python runtime environment.
+import sys
+or import sys as nari
+
+print sys.version
+print sys.version_info
+
+print sys.platform
+==================================================
+
+sys.exit()  -->To exit from program/present terminal with value as Zero
+sys.exit(1) sys.exit(5) -->With value 1 or 5 
+
+we can see exit values with echo $?
+
+
+Let take a example:
+
+python_ver=int(sys.version.split()[0].split('.')[0])
+
+if python_ver!=2:
+      print"your python software version is {}.x and this is not compatable to run this script".format(python_ver)
+      print"So,terminating the program please update the python software to 3.x\nThank you!!!\nBye...."
+      sys.exit(0)
+      
+print("Hi we are good with your python version")
+====================================================
+print sys.argv
+print sys.argv[0]
+print sys.argv[1]
+    
+=====================================================
+print sys.path
+
+It will display the  list of the paths into which python software looks for paths.
+output is a list. if you want to know what are the operation can be done on this sys.path then simply use dir(sys.path) comand on python
+command line. Even you can use for sys.version also. Like dir(sys.version)
+
+if we want add any new path for python paths we can add it using sys.path.append or sys.path.insert
+
+Let us consider the following example.
+
+script name: myfun.py
+    def sayHi():
+      print "hi"
+      
+ Now if we want to use myfun script as a module from other script then we can use by importing it.
+ 
+ But while importing just assuem you are not in the myfun script location then while importing it will give an error.
+ 
+ NOW in second script:
+ import sys
+ sys.path.append("path_of_myfun.py_script")
+ import my_fun #now it will work.
+ 
+=====================================================================================================================
+dont tell this: Using the sys module to find imported modules
+print sys.modules
+print sys.modules.keys()
+===========================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

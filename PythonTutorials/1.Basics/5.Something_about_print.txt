@@ -1,0 +1,9 @@
+print "Hello World"
+
+#print a newline
+print
+
+#add trailing comma to
+#remove newline
+print "No newline", 
+#This is output:  No newline<your_cursor_will_blink_here>

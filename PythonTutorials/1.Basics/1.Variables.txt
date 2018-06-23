@@ -1,0 +1,18 @@
+Variable are simply used to store a value.We can store any value/datatype into a variable.
+I mean value/data means it could be a number(int,float,complex),string,Boolean,list,tuple,dictionay and sets
+
+
+Storing numbers into a variable:
+x=3
+y=4.56
+z=0.345
+
+stroing strings/characters into a variable:
+my_name="Narendra"
+x='P'
+
+x,y=4,5
+x=6;y=56
+
+
+Note: We will cover remaining concepts later..

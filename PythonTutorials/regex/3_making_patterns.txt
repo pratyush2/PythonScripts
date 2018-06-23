@@ -1,0 +1,77 @@
+https://www.computerhope.com/jargon/r/regex.htm
+https://users.cs.cf.ac.uk/Dave.Marshall/PERL/node79.html
+https://www.geeksforgeeks.org/regular-expression-python-examples-set-1/
+
+
+|==============================================|
+|https://pythex.org/   online editor for regex |
+|==============================================|
+
+
+my_str="Pythoy is a language and Python and Pytho4 AND Pytho*   and Pythonforu and Pythonn"
+
+my_pat="Pytho."      . -->any character
+my_pat="Pytho\w"    \w -->alphanumeric
+my_pat="Pytho\W"     \W-->non-alphanumberic
+
+print re.findall(my_pat,my_str)
+
+my_pat="Pytho\d"   \d -->digit
+
+print re.findall(my_pat,my_str)
+
+my_pat="Pytho\D"    \D -->non-digit
+
+print re.findall(my_pat,my_str)
+
+my_pat=r'Pytho\w+'   \w one or more times
+my_pat=r'Python?'     n zero or one time
+my_pat=r'Pytho*"     0 zero or more times
+
+my_pat=r'Pytho[ny]'    (eq: Python or Pythony)
+
+print re.findall(my_pat,my_str)
+
+my_pat=r'Pytho[h-n]'  (eq: Pythoh,Pythoi,Pythoj,Pythok  upto Python)
+
+my_pat=r'Pytho[a-jl-q]'  (a-j or l-q)
+
+pritn re.findall(my_pat,my_str)
+
+my_str="Python is greatgreat and modules are also greatt  greattttttttttt"
+my_pat=r'great{2}'
+print re.findall(my_pat,my_str)
+
+my_pat=r'(great){2}'
+
+my_pat=r'great{3,}
+
+my_pat=r'great{2,3}
+
+
+my_str='Hi How are you hi'
+my_pat=r'how'
+print re.findall(my_pat,my_str)
+
+print re.findall(my_pat,my_str,re.I)
+print re.findall(my_pat,my_str,flags=re.I)
+
+print re.findall(r'^hi',my_str)
+print re.findall(r'^hi',my_str,re.I)
+
+print re.findall(r'hi$',my_str,re.I)
+
+
+ my_str='hi how are youhow'
+ print re.findall(r'how',my_str)
+['how', 'how']
+ print re.findall(r'how\b',my_str)
+['how', 'how']
+print re.findall(r'\bhow\b',my_str)
+
+
+
+https://www.guru99.com/python-regular-expressions-complete-tutorial.html
+
+
+

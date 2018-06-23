@@ -1,0 +1,1 @@
+http://thomas-cokelaer.info/tutorials/python/classes.html

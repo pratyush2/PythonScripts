@@ -1,0 +1,10 @@
+https://doughellmann.com/blog/2009/06/19/python-exception-handling-techniques/
+
+https://code.tutsplus.com/tutorials/how-to-handle-exceptions-in-python--cms-28621
+
+https://www.hackerearth.com/practice/python/object-oriented-programming/errors-and-exceptions/tutorial/
+
+https://swcarpentry.github.io/python-novice-inflammation/07-errors/
+
+
+https://www.python-course.eu/exception_handling.php

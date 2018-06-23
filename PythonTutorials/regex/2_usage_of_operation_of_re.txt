@@ -1,0 +1,115 @@
+Any way before going to learn about patterns. i want to give clarity on re operations because we have differnt operations in re modules.
+So, we must aware how to select re operation based on your requirement.
+
+Let me take string as:
+my_string="Python is a great language and it has poweful modules because of this modules python is popular and we can use python in real time"
+
+import re
+print re.match("Python",my_string)
+
+or
+
+print re.match(r"Python",my_string)
+
+or
+
+my_search_pat=r"Python"
+print re.match(my_search_pat,my_string)
+
+you are getting some thing actually that is called object. object is nothing but some data which consist of some information.
+
+suppose if we try with:
+print re.match(r"shell",my_string)
+
+we are not getting anything here. So, whenever there is a match then it will give some object and that object consist of some more information about match.
+
+So,we will see the use of object:
+
+print re.match(r"Python",my_string).start()
+it will give the strting index of that matched pattern in your string.
+
+print re.match(r"Python",my_string).end()
+it will give the ending index of that matched pattern in your string.
+
+print re.match(r"Python",my_string).group()
+it will give the your matched string.
+
+Now observe one thing:
+
+print re.match(r"shell",my_string)
+print re.match(r"shell",my_string).start()
+it is giving error.Becasue there is no object for re.search(r"shell",my_string)
+
+so now observe the point that: you should use start() end() and group() only if there  is a object.Now while working with regular expressions then we shold follow like:
+
+my_string="Python is a great language and it has poweful modules because of this modules python is popular and we can use python in real time"
+my_pat=r"Python"
+match_ob=re.match(my_pat,my_string)
+if match_ob:
+  print "match_word is: {}\nmatch_word_starting_index={}\nmatch_word_ending_index={}".format(match_ob.group(),match_ob.start(),match_ob.end)
+else:
+  print"No match found"
+  
+
+
+Now come to one more point that is:
+
+print re.match(r'python',my_string)
+
+It is not giving object eventhough we have python word in our string.Because re.match will look for match a given pattern only at the starting of a string.
+===========================================================================================================
+If you want find a match object in a given string anywhere then you should go with re.search operation.
+
+my_string="Python is a great language and it has poweful modules because of this modules python is popular and we can use python in real time"
+
+my_pat=r"python"
+match_ob=re.search(my_pat,my_string)
+if match_ob:
+  print "match_word is: {}\nmatch_word_starting_index={}\nmatch_word_ending_index={}".format(match_ob.group(),match_ob.start(),match_ob.end)
+else:
+  print"No match found"
+  
+==========================================================================================================
+Let me discuss one more point here. re.search is giving only first occurence of matching word informationg in the given string.But we have more than one time "python" word is there in our string.Then what about remaing python words ? For that we need to use re.finditer operation.Before going to work with re.finditer, we should know when to use re.search. it is very simple, whenever if you want to check atleast one time the given pattern is der in the given string or not then we will go with re.seach.
+=========================================================================================================
+Now we will discuss with re.finditer
+
+
+my_string="Python is a great language and it has poweful modules because of this modules python is popular and we can use python in real time"
+
+my_pat=r"python"
+
+match_ob=re.finditer(my_pat,my_string)
+pritn match_ob
+
+It is giving some object right,in this object we will all information of all matched object.Now to each object for each matched pattern then we need to use loop here.
+Let me show that:
+if match_ob:
+  for each_ob in match_ob:
+    print each_ob
+ else:
+  print "No match found"
+
+and if you want to see all info of each matched object then:
+
+if match_ob:
+  for each_ob in match_ob:
+    print "match_word is: {}\nmatch_word_starting_index={}\nmatch_word_ending_index={}".format(match_ob.group(),match_ob.start(),match_ob.end)
+ else:
+  print "No match found"
+
+
+=============================================================
+if we want to find the no of matched pattrens in a given string then how you can find?
+
+you can find like:
+count=0
+if match_ob:
+  for each_ob in match_ob:
+    count++
+  print"The no of matched words are: {}".format(count)  
+ else:
+  print "No match found"
+
+or simple way is:
+print len(re.findall(my_pat,my_string))

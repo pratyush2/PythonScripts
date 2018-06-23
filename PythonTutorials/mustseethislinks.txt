@@ -1,0 +1,9 @@
+http://www.techbeamers.com/use-try-except-python/
+
+https://www.journaldev.com/17243
+
+https://www.programcreek.com/python/example/181/re.M
+
+http://thomas-cokelaer.info/tutorials/python/module_os.html
+
+https://www.digitalocean.com/community/tutorials/how-to-import-modules-in-python-3

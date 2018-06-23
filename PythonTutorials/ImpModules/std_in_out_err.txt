@@ -1,0 +1,2 @@
+http://faculty.washington.edu/jht/GS559_2017/lectures/9B_StdIO_Python.pdf
+

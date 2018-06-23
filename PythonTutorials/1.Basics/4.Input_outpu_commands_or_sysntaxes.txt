@@ -1,0 +1,14 @@
+raw_input() for strings
+
+input() for numbers   These two for input
+
+print for output
+
+Note: But in python3 we have only one input command that is input()
+
+then here we should use type costing
+
+
+
+
+x,y=raw_input(),input()

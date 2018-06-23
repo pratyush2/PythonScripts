@@ -1,0 +1,22 @@
+
+'clear', 'copy', 'fromkeys', 'get', 'has_key', 'ite
+ms', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values', 'viewitems', 'viewkeys', 'viewvalues'
+
+
+#This program explains the operations on dictionary
+my_dict_empty = {} #Defining an empty string
+my_dict1 = {1: 'apple', 2: 'ball'}
+my_dict = {'name':'Jack', 'age': 26}
+print(my_dict)
+print(my_dict['name'])
+print(my_dict.get('name'))
+my_dict['age']=29 #updating  value
+print(my_dict['age'])
+print(my_dict.get('age'))
+my_dict['address'] = 'Downtown'
+print(my_dict)
+print(my_dict.keys())
+print(my_dict.values())
+print(my_dict.items())
+del my_dict
+print(my_dict)

@@ -1,0 +1,46 @@
+\ -->continuation of a line: ex: x="This is first line \
+This is also a first lien"
+
+\n --> New line ex: x="This is first line\nThis is second line"
+\t	 Horizontal Tab
+\v	 Vertical Tab
+ex: print("") and print("\v") you can obersver
+\b	 Backspace
+\r	 Carriage Return
+
+\'	Single quote
+\"	Double quote
+\\  Backslah
+
+
+x="hi it is Python's"
+print x
+
+x="hi "python" "
+  File "<stdin>", line 1
+    x="hi "python" "
+                ^
+SyntaxError: invalid syntax
+x="hi \"python\" "
+print x
+hi "python" 
+
+
+\ os separator in Windows
+/ os separtor in unix like systems.
+
+Let me takse some path ins windows like c:\networks
+if you print that we wont get exact path: print("c:\networks")
+
+so wherenver if you are working in windows you should take care: print("c:\\networkds")
+
+
+
+
+
+https://www.programiz.com/python-programming/string
+
+
+
+\ooo	Character with octal value ooo
+\xHH	Character with hexadecimal value HH

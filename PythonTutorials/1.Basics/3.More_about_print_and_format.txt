@@ -1,0 +1,21 @@
+print "hi how are you"
+x="hi how are you"
+print x
+
+x=5
+print "x value is: {}".format(x)
+
+y="x value is: {}".format(x)
+print y
+
+
+print"x value is: "
+print x
+pritn "x value is: ", (cursor wont go to next line) 
+print x
+
+
+
+
+
+

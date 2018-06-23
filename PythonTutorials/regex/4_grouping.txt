@@ -1,0 +1,4 @@
+https://www.thegeekstuff.com/2014/07/python-regex-examples
+https://www.dotnetperls.com/re-python
+https://www.machinelearningplus.com/python-regex-tutorial-examples/
+http://www.informit.com/articles/article.aspx?p=1278986

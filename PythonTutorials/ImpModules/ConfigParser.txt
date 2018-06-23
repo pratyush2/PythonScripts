@@ -1,0 +1,6 @@
+http://www.pythonforbeginners.com/scripts/how-to-use-configparser-in-python/
+
+
+
+http://omz-software.com/pythonista/docs/library/configparser.html    imp
+

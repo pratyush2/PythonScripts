@@ -1,0 +1,38 @@
+ Python supports integers, floating point numbers and complex numbers.
+ x=3;y=5.78,z=4+3j
+ print(type(x))
+ prin(type(y))
+ print(type(z))
+ 
+ 
+
+ 
+ Type conversion:
+ 
+x=4 then print float(x) print complex(x)
+y=5.67 then print int(y) print complex(y)
+z=4+5j then you cant get either integer or folat, right ? you can get only real and imaginary parts
+print z.real
+print z.imag
+
+Numbers we deal with everyday are decimal (base 10) number system. But computer programmers (generally embedded programmer) need to work with binary (base 2), hexadecimal (base 16) and octal (base 8) number systems.
+
+In Python, we can represent these numbers by appropriately placing a prefix before that number.
+ 
+ x=0b10 or x=0B10  print bin(x)   #Note that by default command line is for decimal number systems only
+ x=0o20 or x=0O20  print oct(x)
+ x=0x10 or x=0X10  print hex(x)
+ 
+ 
+ 
+ 
+ 
+#Dont go with this as of now:
+
+
+
+print "{0:b}".format(17)
+print "{0:o}".format(17)
+print "{0:x}".format(17)
+ 
+ https://www.programiz.com/python-programming/numbers

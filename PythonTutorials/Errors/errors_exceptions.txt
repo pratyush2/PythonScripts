@@ -1,0 +1,53 @@
+https://en.wikiversity.org/wiki/Python_Concepts/Try_Statement important
+
+
+It is very common to encounter errors during the execution of a program. Two common kinds of errors that you may have to deal with 
+are syntax errors and exceptions. Syntax errors occur when you type the code incorrectly. In such cases, the error  (erroneous) line is 
+repeated by the parser with an arrow pointing to the earliest location where the error was detected.
+
+Exceptions are different from syntax errors. They occur during the execution of a program when something unexpected happens.
+For example: let's say you are asking the user to input a number in order to perform a division. Now,if the user enters a number 0 instead
+of non-zero value and you ryt to divide non-zero number with a zero number by the given input then the program will give output a 
+ZeroDivisionError
+
+ex: 4/0
+Let me take one more example:
+if you print some variable without defining a value then it will give NameError.
+
+Let me take one more example:
+
+suppose if you try to divide or add number with string then you will get TypeError.
+
+ex: 4+"hi"
+
+Let me take one more example:
+suppose you are having a li =[3,4,5]
+then if you try to print li[3] then you will get an IndexError.
+
+=========================================
+Let me take one more example:
+suppose if you trying to read an integer with
+x=int(raw_input("Enter any number: "))
+
+then you will get ValueError.
+=========================================
+
+
+Let me take one more example:
+if you try to read a file which not existing then you will get IOError. This is also call file error.
+
+
+
+one more exception:
+suppose you are trying to import a module but which is not been there with python then you will get ImportError.
+
+
+
+
+When you are not properly handling exceptions, the program will abruptly quit as it won't know what to do in such cases.
+
+
+http://www.techbeamers.com/use-try-except-python/
+
+http://www.techbeamers.com/python-try-except-beginners/
+

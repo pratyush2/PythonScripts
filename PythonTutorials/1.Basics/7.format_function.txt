@@ -1,0 +1,30 @@
+
+
+>>> print("{:*<20}".format("Python"))
+Python**************
+>>> print("{:*^20}".format("Python"))
+*******Python*******
+>>> print("{}".format(**20))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: format() argument after ** must be a mapping, not int
+>>> print("{}".format('*'*20))
+********************
+>>> print("{:^20}".format("hi"))
+         hi         
+
+
+https://www.w3resource.com/python/python-format.php
+
+
+http://thepythonguru.com/python-string-formatting/
+
+
+FORMAT CODES	DESCRIPTION
+d	              for integers
+f	              for floating point numbers
+b	              for binary numbers
+o	              for octal numbers
+x             	for octal hexadecimal numbers
+s             	for string
+e	              for floating point in exponent format

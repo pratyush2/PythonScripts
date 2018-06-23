@@ -1,0 +1,37 @@
+Suppose if my_string="Python is easy and it has a powerful modules"
+
+Now let me split this:
+
+print my_string.split()  So, it will split with default spliting character that is space.
+
+Instead of space: let me take spliting character is: "is"
+print my_string.split('is')  So, it will split your my_string wherever 'is'word is there.
+
+But i want to split my_string such that wherever either is or it are there, there i want to split my string. Then how ?
+So,it is not possible with normal spliting character concept. Anyway to split your stirng operation is my_string.split() only.
+but that spliting character is now two words they are "is" and "it".
+split() operation will take only one string character to split your string. Then how can we achieve our requirement.
+
+suppose if i form  a spliting string character such that , that string represents two words then our work is over right?
+
+Forming a single string such that that represents more than one charter/string is called regular expression. or pattern.
+
+A regular expression (or "regex") is a search pattern/string used for matching one or more characters within a string.
+
+Python has a in-built module to work with regex. That is re module.
+
+Now let me complete our taks with the re module.
+import re
+
+print re.split("i[st],my_string)
+
+Here, re.split("i[st]",my_string) is called regular expression and i[st] is called pattern.
+
+So, if you want to good at regular expression then you must know how to form a pattern for our requirement.
+
+Once if you are good at how to make patterns then you shold know different operations of re module.
+
+
+There different operations in re module are:
+
+re.match re.search re.findall re.findaiter, re.complie,re.split re.sub 

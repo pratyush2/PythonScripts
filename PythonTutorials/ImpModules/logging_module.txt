@@ -1,0 +1,19 @@
+https://docs.djangoproject.com/en/2.0/topics/logging/  
+https://randops.org/2017/09/26/pythons-logging-module-in-a-boto3botocore-context/
+=================================================================================
+
+
+http://mussol.org/2016/12/15/understanding-logging-in-python/
+
+https://www.geeksforgeeks.org/logging-in-python/
+
+http://eric.themoritzfamily.com/learning-python-logging.html
+
+https://fangpenlin.com/posts/2012/08/26/good-logging-practice-in-python/
+
+http://www.linuxtopia.org/online_books/programming_books/python_programming/python_ch34s07.html
+
+https://www.internalpointers.com/post/logging-python-sub-modules-and-configuration-files
+
+https://mattgathu.github.io/multiprocessing-logging-in-python/   imp
+https://logmatic.io/blog/python-logging-with-json-steroids/

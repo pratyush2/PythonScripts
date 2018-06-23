@@ -1,0 +1,15 @@
+In boolean data type we are having only two values
+
+True and False  
+
+x=True then print type(x)
+but if you right x="True" and then print type(x) it will give type as string because we quoted that data.By deafult any data which is der in quotes is always a string. Remember that.
+
+
+Observe the following:
+
+print bool(23)   print bool(-234) print bool(1) print bool(" ")
+print bool(0) print bool("") 
+
+so always non-zero or non-empty value will give resultant as boolean True
+remaing False means zero and empty values.

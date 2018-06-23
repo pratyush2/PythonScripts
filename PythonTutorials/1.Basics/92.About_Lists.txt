@@ -1,0 +1,35 @@
+A list is a data structure in Python that is a mutable, or changeable, ordered sequence of elements.
+Each element or value that is inside of a list is called an item. Just as strings are defined as characters between quotes,
+lists are defined by having values between square brackets [ ]
+
+ex: my_names = ['nari', 'narendra', 'kumar', 111, '345',4]
+print my_names
+pritn type(my_names)
+
+print my_names[0]
+print my_names[2]
+
+existing item in list can be changed. Thats y lists are called mutable data type.
+my_name[0]="valaxy"
+
+but dont assign out of index range value: like: my_name[9]=4  you will get an error.
+
+Let me give some of the important function/operations on lists: 
+
+First recolect that: if you do any operations on strings they wont change the original data. Herer oprations on list will change the 
+original data.
+
+Here are some other common list methods.
+
+list.append(elem) -- adds a single element to the end of the list.
+                            Common error: does not return the new list, just modifies the original.
+list.insert(index, elem) -- inserts the element at the given index, shifting elements to the right.
+list.extend(list2) adds the elements in list2 to the end of the list. Using + or += on a list is similar to using extend().
+list.index(elem) -- searches for the given element from the start of the list and returns its index.
+                            Throws a ValueError if the element does not appear (use "in" to check without a ValueError).
+list.remove(elem) -- searches for the first instance of the given element and removes it (throws ValueError if not present)
+list.sort() -- sorts the list in place (does not return it). (The sorted() function shown below is preferred.)
+list.reverse() -- reverses the list in place (does not return it)
+list.pop(index) -- removes and returns the element at the given index. Returns the rightmost element
+                    if index is omitted (roughly the opposite of append()).
+Notice that these are *methods* on a list object, while len() is a function that takes the list (or string or whatever) as an argument.

@@ -1,0 +1,117 @@
+https://jakevdp.github.io/WhirlwindTourOfPython/14-strings-and-regular-expressions.html
+
+
+my_name1="Narendra Kumar Reddy"
+my_name2="narendra kumar reddy"
+my_name3="narendrakumarreddy"
+your_string_variable=my_name1
+
+How to print a string?
+print(your_string_variable)
+
+#Slicing of a string
+print(your_string_variable)
+print(your_string_variable[:])
+print(your_string_variable[2:9])
+print(your_string_variable[2:9:1])
+print(your_string_variable[2:9:2])
+print(your_string_variable[3])
+
+print(your_string_variable[:-1])
+
+How to change or delete a string?
+your_string_variable[3]='x' Not possible it will give error
+TypeError: 'str' object does not support item assignment.
+
+Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. We can simply reassign different strings to the same name.
+
+del my_string[1]
+TypeError: 'str' object doesn't support item deletion
+
+#Length of a function: 
+print(len(your_string_variable))
+
+#The following string functions will convert your stirngs from lower to upper/upper to lower ......
+print(your_string_variable.lower())
+print(your_string_variable.upper())
+print(your_string_variable.title())
+print(your_string_variable.capitalize())
+print(your_string_variable.swapcase())
+ 
+#The following string functions will give output as True or False
+ 
+print(your_string_variable.islower())
+print(your_string_variable.isupper())
+print(your_string_variable.istitle())
+print(your_string_variable.isdigit()) #i think in python3 it is not der instead it used isnumeric()
+print(your_string_variable.isalpha())
+print(your_string_variable.isalnum())  #only numbers and alphabets
+print(your_string_variable.isspace())
+print(your_string_variable.endswith('your_argument'))
+print(your_string_variable.startswith('your_argument'))
+
+Above methods are also called as boolean methods because their output is alwasy eithere True/False
+
+#Imp string functions: index,find,replace,count,join,split,strip
+ 
+print(your_string_variable.index('character/string')
+print(your_string._variable.index('character/string',startingindex,endingindex))
+
+print(your_string_variable.find('character/string')   
+print(your_string_variable.find('character/string',startingindex,endingindex))
+
+
+#index and find will give the index of first occurence of a charter/string
+#If character/string is not found then index method will give error
+#but find wont give error instead it will give -1 if character/string doesnt exist.
+                                                       
+                                   
+print(your_string_variable.count('character/string')   
+print(your_string_variable.count('character/string',startingindex,endingindex))
+                                   
+                                                       
+print(your_string_variable.replace(searching_word/character,replacing_word/string) 
+Note: it will replace in all occurence of your searching_word with replacing_word/string
+                                                       
+print("".join(your_string_variable)                                                          
+print(" ".join(your_string_variable)                                                          
+print("**".join(your_string_variable)                                                          
+print("xxxxx".join(your_string_variable)                                                     
+Note: in join method/function/operation alwasy it should take only one argument.
+
+print(your_string_variable.split())
+print(your_string_variable.split(" "))
+Note: By deafult split will take space as spliting value
+print(your_string_variable.split("r"))
+
+
+print(your_string_variable.strip())
+print(your_string_variable.strip(" "))
+Note: split and strip defautl argument is space.
+
+print(your_string_variable.rstrip())
+print(your_string_variable.lstrip())
+#ljust(), rjust(), center()
+x="Menu"
+pritn x.center(30,' ')
+print x.center(30,'*')
+
+print x.ljust(30,'-')
+print x.rjust(30,'-')
+
+#Important:
+string = "Hello World"
+print( ' '.join(reversed(string)))
+
+#String Concatination/adding strings:
+strin1="Narendra"
+string2="Kumar"
+print(string1+string2)
+print(string1+" "+string2)
+print(string1+" 3")
+print(string1+3) : you will get error beacuse we cant add string and numbers
+print(string1*3) jsut see the output
+
+
+https://www.programiz.com/python-programming/string
+https://www.programiz.com/python-programming/methods/string/
