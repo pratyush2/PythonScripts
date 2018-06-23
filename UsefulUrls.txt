@@ -35,3 +35,5 @@ https://medium.com/@devopsglobaleli/introduction-17b4d0c592b6
 
 https://blog.wavycloud.com/2016/12/27/boto3-pyboto3-autocomplete/
 https://sysadmins.co.za/interfacing-amazon-dynamodb-with-python-using-boto3/
+
+http://www.pythonexample.com/code/iam-list-user-policies/
